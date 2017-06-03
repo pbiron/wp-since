@@ -10,7 +10,7 @@ List changes in a WP version.
 
 == Description ==
 
-WP_CLI version of [https://developer.wordpress.org/reference/since/&lt;version>](https://developer.wordpress.org/reference/since/4.7.0).
+[WP_CLI](https://make.wordpress.org/cli/handbook/) version of [https://developer.wordpress.org/reference/since/&lt;version>](https://developer.wordpress.org/reference/since/4.7.0).
 
 Must be run on a local install, and will **not** run against the live DevHub.
 
