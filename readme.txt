@@ -3,7 +3,7 @@ Contributors: pbiron
 Tags: wp_cli
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z6D97FA595WSU
 
 List changes in a WP version.
@@ -76,9 +76,10 @@ plugin are (I'm not sure what they are, I've only tested with
 
 == Changelog ==
 
-= 0.1 =
+=== 0.1.1 ===
+
+* Added check that `wporg-developer`, or child theme thereof, is active
+
+=== 0.1 ===
 
 * Initial commit
-
-== Other Notes ==
-I was inspired to write this plugin when I saw the [Blue Admin Bar](https://wordpress.org/plugins/blue-admin-bar/) plugin.  I thought that was a great idea, but having the background-color of the entire Admin Bar be different was a bit jarring.

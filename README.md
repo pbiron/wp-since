@@ -68,6 +68,10 @@ plugin are (I'm not sure what they are, I've only tested with
 
 ## Changelog
 
+### 0.1.1
+
+* Added check that `wporg-developer`, or child theme thereof, is active
+
 ### 0.1.0
 
 * Initial commit

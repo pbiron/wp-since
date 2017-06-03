@@ -3,7 +3,7 @@
  * Plugin Name: WP Since
  * Description: List changes in a WP version
  * Plugin URI:  https://github.com/pbiron/wp-since
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Paul 'Sparrow Hawk' Biron
  * Author URI:  http://SparrowHawkComputing.com
  * License: GPL2
@@ -24,7 +24,13 @@ if ( ! ( defined( 'WP_CLI' ) && WP_CLI ) ) {
 
 // add our WP_CLI command
 add_action( 'init', function() {
-	WP_CLI::add_command( 'since', WP_Since_CLI ) ;
+	if ( 'wporg-developer' !== get_template() ) {
+		WP_CLI::error( "'wprog-developer', or a child theme thereof, is not active");
+
+		return;
+ 	}
+
+ 	WP_CLI::add_command( 'since', WP_Since_CLI ) ;
 
 	return;
 } ) ;
