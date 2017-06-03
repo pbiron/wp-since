@@ -31,6 +31,8 @@ add_action( 'init', function() {
 
 /**
  * WP_CLI version of https://developer.wordpress.org/reference/since/version
+ *
+ * @since 0.1.0
  */
 class
 WP_Since_CLI
@@ -86,6 +88,8 @@ WP_Since_CLI
 	 *
 	 * 	   # List all changes to hooks in version x.y.z.
 	 * 	   $ wp since x.y.z --post_type=wp-parser-hook
+	 *
+	 * @since 0.1.0
 	 *
 	 * @todo For some reason the "$ wp help since" isn't formatting correctly,
 	 * 		 must be a typo in there somewhere that I just can't see
@@ -183,6 +187,8 @@ WP_Since_CLI
 	 *
 	 * If no version is passed on command-line, attempt to get the current version
 	 *
+	 * @since 0.1.0
+	 *
 	 * @param string $version Version passed on command-line.
 	 *
 	 * @return string|exit Version on success.  On error, output error message(s) and exit.
@@ -210,6 +216,8 @@ WP_Since_CLI
 	/**
 	 * Get the package for a post
 	 *
+	 * @since 0.1.0
+	 *
 	 * @param WP_Post $post The post to get the package for.
 	 *
 	 * @return string
@@ -229,6 +237,8 @@ WP_Since_CLI
 
 	/**
 	 * Get the trac ticket for a post
+	 *
+	 * @since 0.1.0
 	 *
 	 * @param WP_Post $post The post to get the ticket for.
 	 *
@@ -254,7 +264,7 @@ WP_Since_CLI
 	/**
 	 * Get the modification made in the specified version.
 	 *
-	 * Strips the span.since-description markup
+	 * @since 0.1.0
 	 *
 	 * @param WP_Post $post The post to get the modification for.
 	 * @param string $version The version to get the modification for.
@@ -266,6 +276,7 @@ WP_Since_CLI
 	{
 		$changelog = DevHub\get_changelog_data( $post->ID );
 
+		// strip the span.since-description markup
 		return preg_replace( '/<span class="since-description">(.*)<\/span>/', '$1',
 			empty( $changelog[$version]['description'] ) ? '' : $changelog[$version]['description'] )  ;
 	}
