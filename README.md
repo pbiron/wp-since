@@ -43,14 +43,14 @@ Must be run on a local install, and will **not** run against the live DevHub.
 You can install this plugin by one of two methods:
 
 1. install via the zip file
-  1. Unzip the zip file into the `/wp-content/plugins/` directory
-  1. Activate the plugin through the 'Plugins' menu in WordPress
+    1. Unzip the zip file into the `/wp-content/plugins/` directory
+    1. Activate the plugin through the 'Plugins' menu in WordPress
 1. install via [GitHub Updater](https://github.com/afragen/github-updater)
-  1. Go to Settings > GitHub Updater in the WordPress admin
-  1. Click on the "Install Plugin" tab
-  1. Enter the URL for this repo in the "Plugin URI" field
-  1. Click "Install Plugin"
-  1. Activate this plugin
+    1. Go to Settings > GitHub Updater in the WordPress admin
+    1. Click on the "Install Plugin" tab
+    1. Enter the URL for this repo in the "Plugin URI" field
+    1. Click "Install Plugin"
+    1. Activate this plugin
  
 Regardless of the method used to install this plugin, you must then:
 
