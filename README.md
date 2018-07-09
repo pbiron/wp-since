@@ -40,7 +40,7 @@ Must be run on a local install, and will **not** run against the live DevHub.
 `$ wp since x.y.z --post_type=hook`
 
 ### List all deprecated functions in version x.y.z
-`$ wp since x.y.z --change_type=deprecated --post_type=wp-parser-function`
+`$ wp since x.y.z --change_type=deprecated --post_type=function`
 
 ## Installation
 You can install this plugin by one of two methods:
